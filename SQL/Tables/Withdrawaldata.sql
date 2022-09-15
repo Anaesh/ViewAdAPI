@@ -1,0 +1,15 @@
+use ViewAd_BMES;
+CREATE TABLE IF NOT EXISTS Withdrawaldata (
+    Id VARCHAR(36),
+    UserId VARCHAR(36),
+    Amount INT,
+    Link VARCHAR(2000),
+    RequestStatus VARCHAR(200),
+    TokenId VARCHAR(36),
+    WithdrawDateTime DATETIME,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	UpdatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT PK_Withdrawaldata_Id PRIMARY KEY (Id),
+    CONSTRAINT FK_Withdrawaldata_UserId FOREIGN KEY (UserId) REFERENCES Users(Id),
+    CONSTRAINT FK_Withdrawaldata_TokenId FOREIGN KEY (TokenId) REFERENCES Tokens(Id)
+);

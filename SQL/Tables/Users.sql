@@ -1,0 +1,16 @@
+use ViewAd_BMES;
+CREATE TABLE IF NOT EXISTS Users (
+    Id VARCHAR(36),
+    Coins INT,
+    DeviceToken VARCHAR(2000),
+    Email VARCHAR(500),
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    Password VARCHAR(255),
+    PhoneNumber VARCHAR(10),
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
+	UpdatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT PK_Users_Id PRIMARY KEY (Id),
+    CONSTRAINT UK_Users_Email UNIQUE (Email),
+    CONSTRAINT UK_Users_PhoneNumber UNIQUE (PhoneNumber)
+);

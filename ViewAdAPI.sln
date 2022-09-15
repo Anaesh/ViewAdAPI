@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewAdAPI", "ViewAdAPI.csproj", "{FD46A70B-7AAD-4F37-AF9C-DF7E5B9DF2C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD46A70B-7AAD-4F37-AF9C-DF7E5B9DF2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD46A70B-7AAD-4F37-AF9C-DF7E5B9DF2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD46A70B-7AAD-4F37-AF9C-DF7E5B9DF2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD46A70B-7AAD-4F37-AF9C-DF7E5B9DF2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C66A2BE-9457-4657-B47F-B3CCCA55E966}
+	EndGlobalSection
+EndGlobal
